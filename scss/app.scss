@@ -63,3 +63,7 @@
 // Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+// Custom
+@import 'components/_navbar';
+@import "components/_header-section";

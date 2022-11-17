@@ -1,0 +1,13 @@
+.typography {
+  //iterate over $heading-font-sizes
+  @each $key, $val in $heading-font-sizes {
+    //create a class for each key
+    #{$key} {
+      //set the font-size to the value
+      font-size: $val;
+      font-weight: 600;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+}

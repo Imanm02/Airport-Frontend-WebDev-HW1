@@ -1,0 +1,10 @@
+@each $key, $val in $my-palette {
+  .text-#{$key} {
+    color: $val;
+  }
+  .text-hover-#{$key} {
+    &:hover {
+      color: $val;
+    }
+  }
+}

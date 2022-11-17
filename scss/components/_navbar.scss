@@ -1,13 +1,13 @@
-$topbar-responsive-bg: #519dc7;
 $topbar-responsive-animation-type: fade-in; // or use slide-down or none
 
 
 .topbar-responsive {
   background: transparent;
   box-shadow: 0 0 1px 0;
+  padding: 0;
+  margin: 0;
 
   .topbar-responsive-logo {
-    color: $white;
     vertical-align: middle;
   }
 
@@ -19,10 +19,9 @@ $topbar-responsive-animation-type: fade-in; // or use slide-down or none
     }
 
     a {
-      color: #0c3d5d;
       transition: color 0.15s ease-in;
       font-weight: bold;
-
+      margin: 0 1rem ;
 
       &:hover {
         color: #219cea;
@@ -34,15 +33,9 @@ $topbar-responsive-animation-type: fade-in; // or use slide-down or none
     }
 
     .topbar-responsive-button {
-      color: $white;
-      border-color: $white;
       border-radius: 5000px;
       transition: color 0.15s ease-in, border-color 0.15s ease-in;
-
-      &:hover {
-        color: lighten($topbar-responsive-bg, 60%);
-        border-color: lighten($topbar-responsive-bg, 60%);
-      }
+      margin: 0 1rem ;
 
       @media screen and (max-width: 39.9375em) {
         width: 100%;
@@ -61,7 +54,6 @@ $topbar-responsive-animation-type: fade-in; // or use slide-down or none
       span {
         position: absolute;
         right: 0;
-        border: 1px solid $white;
         border-radius: 5px;
         padding: 0.25rem 0.45rem;
         top: 50%;

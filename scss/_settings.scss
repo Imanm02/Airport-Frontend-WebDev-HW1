@@ -68,11 +68,33 @@
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
+
+//Font sizes
+$heading-font-sizes: (
+  "h1": 2.488em,
+  "h2": 2.074em,
+  "h3": 1.728em,
+  "h4": 1.44em,
+  "h5": 1.2em,
+  "h6": 1em
+);
+
+//Theme
+$primary: #000A25;
+$secondary: #00103D;
+$text-primary: #0B9AA1;
+$text-secondary: #5B7393;
+
+$my-palette: (
+  "primary": $text-primary,
+  "secondary": $text-secondary,
+);
+
 $foundation-palette: (
-        primary: #000A25,
-        secondary: #00103D,
-        text-primary: #0B9AA1,
-        text-secondary: #5B7393,
+        primary: $primary,
+        secondary: $secondary,
+        text-primary: $text-primary,
+        text-secondary: $text-secondary,
         success: #3adb76,
         warning: #ffae00,
         alert: #cc4b37,
@@ -81,7 +103,7 @@ $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
-$white: #fefefe;
+$white: #e5dddd;
 $body-background: $white;
 $body-font-color: $black;
 $body-font-family: 'vazirmatn', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;

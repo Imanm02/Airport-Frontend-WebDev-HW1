@@ -10,30 +10,30 @@
         @import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
     </style>
 </head>
-<body>
+<body style="background: white">
 <!--Navbar goes here-->
 <div>
     <nav class="top-bar topbar-responsive">
         <div class="top-bar-title">
-    <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
-      <button class="menu-icon" type="button" data-toggle></button>
-    </span>
+            <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
+              <button class="menu-icon" type="button" data-toggle></button>
+            </span>
             <a class="topbar-responsive-logo" href="#">
                 <img
                         src="assets/images/logo.jpg"
                         alt="logo"
-                        style="width: 50px; height: 50px;"
+                        style="width: 50px; height: 50px;margin-right: 2rem"
                 >
             </a>
         </div>
         <div id="topbar-responsive" class="topbar-responsive-links">
             <div class="top-bar-right">
                 <ul class="menu simple vertical medium-horizontal">
-                    <li><a href="#">صفحه‌اصلی</a></li>
+                    <li><a class="text-hover-primary" href="#">صفحه‌اصلی</a></li>
                     <li><a href="#">درباره‌ما</a></li>
                     <li><a href="#">بلیط‌ها</a></li>
                     <li>
-                        <button type="button" class="button hollow topbar-responsive-button">ثبت نام</button>
+                        <button type="button" class="button hollow" style="margin-left: 1rem">ثبت نام</button>
                     </li>
                 </ul>
             </div>
@@ -55,30 +55,84 @@
 <!---->
 
 <!--Website Description section goes here-->
-<div class="grid-container ">
+<div class="section-grid">
     <div class="grid-x">
+        <div class="cell small-12 medium-5 large-5 center-content">
+            <div class="typography">
+                <h1 class="text-primary font-bold">
+                    برای سفر خود برنامه‌ریزی کنید!
+                </h1>
+                <h4 class="text-secondary">
+                    اولین قدم برای شروع یک مسافرت لذت بخش و رویایی انتخاب درست مقصد است. انتخاب مقصد نهایی به سفر
+                    شما
+                    هدف و نظم می دهد.
+                </h4>
+            </div>
+        </div>
         <div class="cell small-12 medium-7 large-7">
             <div class="flex-container">
                 <img
-                        src="assets/images/aircraft.svg"
+                        src="assets/images/travelers.svg"
                         alt="advertisement"
-                        style="width: 100%; height: 100%;"
+                        style="width: 100%; height: 100%;padding-left: 2rem"
                 >
-            </div>
-        </div>
-        <div class="cell small-12 medium-5 large-5">
-            <div>
-                <h1 class="text-primary">
-                    برای سفر خود برنامه‌ریزی کنید
-                </h1>
-                <p class="text-secondary">
-                    با ما می‌توانید زیبایی‌های جهان را مشاهده کنید.
-                </p>
             </div>
         </div>
     </div>
 </div>
 
+<div class="section-grid" style="direction: ltr">
+    <div class="grid-x">
+        <div class="cell small-12 medium-5 large-5 center-content" style="direction: rtl">
+            <div class="typography">
+                <h1 class="text-primary font-bold">
+                    برای سفر خود برنامه‌ریزی کنید!
+                </h1>
+                <h4 class="text-secondary">
+                    اولین قدم برای شروع یک مسافرت لذت بخش و رویایی انتخاب درست مقصد است. انتخاب مقصد نهایی به سفر
+                    شما
+                    هدف و نظم می دهد.
+                </h4>
+            </div>
+        </div>
+        <div class="cell small-12 medium-7 large-7">
+            <div class="flex-container">
+                <img
+                        src="assets/images/airport.svg"
+                        alt="advertisement"
+                        style="width: 100%; height: 100%;padding-left: 2rem"
+                >
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-grid">
+    <div class="grid-x">
+        <div class="cell small-12 medium-5 large-5 center-content">
+            <div class="typography">
+                <h1 class="text-primary font-bold">
+                    برای سفر خود برنامه‌ریزی کنید!
+                </h1>
+                <h4 class="text-secondary">
+                    اولین قدم برای شروع یک مسافرت لذت بخش و رویایی انتخاب درست مقصد است. انتخاب مقصد نهایی به سفر
+                    شما
+                    هدف و نظم می دهد.
+                </h4>
+            </div>
+        </div>
+        <div class="cell small-12 medium-7 large-7">
+            <div class="flex-container">
+                <img
+                        src="assets/images/travel_booking.svg"
+                        alt="advertisement"
+                        style="width: 100%; height: 100%;padding-left: 2rem; transform: scale(-1, 1)"
+                >
+            </div>
+        </div>
+    </div>
+</div>
+<!---->
 
 <!--included scripts-->
 <script src="node_modules/jquery/dist/jquery.js"></script>

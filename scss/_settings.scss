@@ -71,7 +71,7 @@ $global-lineheight: 1.5;
 
 //Font sizes
 $heading-font-sizes: (
-  "h1": 2.488em,
+  "h1": 2.6em,
   "h2": 2.074em,
   "h3": 1.728em,
   "h4": 1.44em,
@@ -100,10 +100,10 @@ $foundation-palette: (
         alert: #cc4b37,
 );
 $light-gray: #e6e6e6;
-$medium-gray: #cacaca;
+$medium-gray: #000000;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
-$white: #e5dddd;
+$white: #ffffff;
 $body-background: $white;
 $body-font-color: $black;
 $body-font-family: 'vazirmatn', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;

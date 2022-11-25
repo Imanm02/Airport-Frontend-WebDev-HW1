@@ -1,0 +1,61 @@
+.form-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  max-width: 21.875rem;
+}
+
+
+.user-info-form {
+  label{
+    font-size: 1rem;
+  }
+  img {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    max-height: 250px;
+    margin-top: 1rem;
+  }
+
+  input {
+    box-shadow: none;
+    border-width: 0 0 2px 0;
+    margin-bottom: 1rem;
+    text-align: left;
+    /*on click*/
+    &:focus {
+      border-width: 0 0 2px 0;
+      border-color: $text-primary;
+      box-shadow: none;
+    }
+
+    /*change color of placeholder*/
+    &::placeholder {
+      color: $text-secondary;
+    }
+  }
+
+  .fa-input{
+    direction: rtl;
+    text-align: right;
+  }
+
+  .en-input{
+    direction: ltr;
+    text-align: left;
+  }
+}
+
+#signup-page {
+  background-image: url("../assets/images/blob-haikei.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#login-page{
+  background-image: url("../assets/images/blob-haikei.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+

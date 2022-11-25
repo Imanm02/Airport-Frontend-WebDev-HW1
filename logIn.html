@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="node_modules/alertifyjs/build/css/alertify.rtl.css">
+    <link rel="stylesheet" href="node_modules/alertifyjs/build/css/themes/default.rtl.css">
+    <title>Title</title>
+</head>
+
+<body id="login-page" class="flex-body-row-direction">
+    <form  class="user-info-form">
+        <img
+                src="assets/images/login.svg"
+                alt="login"
+        />
+        <h4 class="text-center text-primary-bold">ورود به اکانت</h4>
+        <label>ایمیل خود را وارد کنید
+            <input type="email" placeholder="somebody@example.com"
+                   oninvalid="this.setCustomValidity('وارد کردن ایمیل الزامی است')"
+                   oninput="this.setCustomValidity('')"
+            >
+        </label>
+        <label>رمز خود را وارد کنید
+            <input type="password" placeholder="رمز عبور"
+                   oninvalid="this.setCustomValidity('وارد کردن رمز الزامی است')"
+                   oninput="this.setCustomValidity('')"
+            >
+        </label>
+        <input id="show-password" type="checkbox"><label for="show-password">نمایش رمز</label>
+
+        <button type="submit" class="text-center text-justify text-right button container-primary expanded">
+            وارد شوید
+        </button>
+    </form>
+</body>
+</html>

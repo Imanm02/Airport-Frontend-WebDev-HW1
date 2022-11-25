@@ -1,0 +1,28 @@
+html {
+  min-width: 100%
+}
+
+@mixin flex-section($direction, $color) {
+  background-color: $color;
+  display: flex;
+  flex-direction: $direction;
+}
+
+.flex-body-row-direction {
+  @include flex-section(row, $white);
+  justify-content: center;
+}
+
+.flex-body-column-direction {
+  @include flex-section(column, $white);
+}
+
+.center-content {
+  @include flex-section(column, $white);
+  align-self: center;
+}
+
+/*change default massage of invalid required field*/
+input:required:invalid {
+  box-shadow: none;
+}

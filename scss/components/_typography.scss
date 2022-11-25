@@ -1,13 +1,22 @@
-.typography {
-  //iterate over $heading-font-sizes
-  @each $key, $val in $heading-font-sizes {
-    //create a class for each key
-    #{$key} {
+// define bold classes with different font weights from 100 to 900
+$font-weights: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+
+@each $key, $val in $heading-font-sizes {
+  //create a class for each font weight
+  @each $weight in $font-weights {
+    .typography-#{$key}-#{$weight} {
       //set the font-size to the value
       font-size: $val;
-      font-weight: 600;
+      //set the font-weight to the value
+      font-weight: $weight;
       margin-top: 1rem;
       margin-bottom: 1rem;
     }
+  }
+}
+
+@each $key, $val in $font-weights {
+  .bold-#{$key} {
+    font-weight: $val;
   }
 }

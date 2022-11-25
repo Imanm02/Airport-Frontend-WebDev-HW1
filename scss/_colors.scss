@@ -1,6 +1,29 @@
 @each $key, $val in $my-palette {
+
+  .container-#{$key} {
+    background-color: $val;
+
+    &:hover {
+      background-color: darken($val, 10%);
+    }
+
+    &:active {
+      background-color: darken($val, 10%);
+    }
+
+    &:focus {
+      background-color: darken($val, 10%);
+    }
+
+
+  }
+
   .text-#{$key} {
     color: $val;
+  }
+  .text-#{$key}-bold {
+    color: $val;
+    font-weight: bold;
   }
   .text-hover-#{$key} {
     &:hover {
@@ -8,3 +31,5 @@
     }
   }
 }
+
+

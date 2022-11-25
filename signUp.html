@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="node_modules/alertifyjs/build/css/alertify.rtl.css">
+    <link rel="stylesheet" href="node_modules/alertifyjs/build/css/themes/default.rtl.css">
+    <title>Title</title>
+</head>
+
+<body id="signup-page" class="flex-body-row-direction">
+<div class="form-container">
+    <form id="signUpForm" class="user-info-form" autocomplete="off">
+        <img
+                src="assets/images/signup.svg"
+                alt="signup"
+        />
+        <h4 class="text-center text-primary-bold">ثبت نام</h4>
+        <label> نام خود را وارد کنید
+            <input class="fa-input" id="firstName" type="text" placeholder="نام"
+                   oninvalid="this.setCustomValidity('نام خود را وارد کنید')"
+                   oninput="this.setCustomValidity('')"
+            >
+        </label>
+        <label> نام خانوادگی خود را وارد کنید
+            <input class="fa-input" id="lastName" type="text" placeholder="نام خانوادگی"
+                   oninvalid="this.setCustomValidity('وارد کردن نام خانوادگی الزامی است')"
+                   oninput="this.setCustomValidity('')"
+            >
+        </label>
+        <label>شماره پاسپورت خود را وارد کنید
+            <input class="en-input" id="passport-number" type="text" placeholder="شماره پاسپورت"
+                   oninvalid="this.setCustomValidity('وارد کردن شماره پاسپورت الزامی است')"
+                   oninput="this.setCustomValidity('')"
+            >
+        </label>
+        <label>ایمیل خود را وارد کنید
+            <input class="en-input" id="email" type="email" placeholder="somebody@example.com"
+                   oninvalid="this.setCustomValidity('وارد کردن ایمیل الزامی است')"
+                   oninput="this.setCustomValidity('')"
+            >
+        </label>
+        <label>رمز خود را وارد کنید
+            <input class="en-input" id="password" type="password" placeholder="رمز عبور"
+                   oninvalid="this.setCustomValidity('وارد کردن رمز الزامی است')"
+                   oninput="this.setCustomValidity('')"
+            >
+        </label>
+        <input id="show-password" type="checkbox">
+        <label for="show-password">نمایش رمز</label>
+
+        <button type="submit" id="signUpButton"
+                class="text-center text-justify text-right button container-primary expanded">
+            ثبت نام
+        </button>
+    </form>
+</div>
+
+
+<!--included scripts-->
+<script src="node_modules/alertifyjs/build/alertify.min.js"></script>
+<script src="scripts/signUpValidation.js"></script>
+</body>
+</html>

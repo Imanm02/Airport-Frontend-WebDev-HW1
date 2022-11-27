@@ -1,10 +1,12 @@
 {
   "tickets": [
     {
-      "source_airport": "IKA",
-      "dest_airport": "DOH",
-      "duration": "",
-      "data": "",
+      "source_airport": "تهران",
+      "dest_airport": "سمرقند",
+      "start_time": "8:30",
+      "end_time": "9:42",
+      "duration": "PT1H12M",
+      "date": "",
       "economy": {
         "price": "2000",
         "left_tickets": "9"
@@ -15,20 +17,68 @@
       }
     },
     {
-      "source_airport": "IKA",
-      "dest_airport": "SIN"
+      "source_airport": "تهران",
+      "dest_airport": "آبادان",
+      "start_time": "12:30",
+      "end_time": "15:45",
+      "duration": "PT3H15M",
+      "date": "",
+      "economy": {
+        "price": "7000",
+        "left_tickets": "75"
+      },
+      "business": {
+        "price": "10000",
+        "left_tickets": "60"
+      }
     },
     {
-      "source_airport": "BOS",
-      "dest_airport": "ABC"
+      "source_airport": "تهران",
+      "dest_airport": "همدان",
+      "start_time": "1:30",
+      "end_time": "7:00",
+      "duration": "PT6H30M",
+      "date": "",
+      "economy": {
+        "price": "4000",
+        "left_tickets": "0"
+      },
+      "business": {
+        "price": "5000",
+        "left_tickets": "2"
+      }
     },
     {
-      "source_airport": "DEF",
-      "dest_airport": "KLM"
+      "source_airport": "تهران",
+      "dest_airport": "سمرقند",
+      "start_time": "8:30",
+      "end_time": "9:42",
+      "duration": "PT1H12M",
+      "date": "",
+      "economy": {
+        "price": "2000",
+        "left_tickets": "9"
+      },
+      "business": {
+        "price": "5000",
+        "left_tickets": "60"
+      }
     },
     {
-      "source_airport": "HIJ",
-      "dest_airport": "NOP"
+      "source_airport": "تهران",
+      "dest_airport": "سمرقند",
+      "start_time": "8:30",
+      "end_time": "9:42",
+      "duration": "PT1H12M",
+      "date": "",
+      "economy": {
+        "price": "2000",
+        "left_tickets": "9"
+      },
+      "business": {
+        "price": "5000",
+        "left_tickets": "60"
+      }
     }
   ]
 }

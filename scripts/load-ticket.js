@@ -1,8 +1,10 @@
-import data from './tickets.json' assert { type: 'json' }
+import data from '../tickets.json' assert {type: 'json'}
 
 let tickets = data.tickets
 
 function putTickets() {
+    // const moment = require('moment')
+    console.log(moment.duration('PT1H12M').toJSON())
     // const tbl = document.createElement('table')
     // const tblBody = document.createElement("tbody");
     //
@@ -23,22 +25,6 @@ function putTickets() {
         for (const key of Object.keys(tickets[i])) {
             const rowElement = tickets[i][key]
             console.log(rowElement)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
             const cell = document.createElement("td");

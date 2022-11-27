@@ -1,0 +1,22 @@
+$hero-height: 80vh;
+
+
+.iman-mio{
+  position: relative;
+  margin-top: -20px;
+  border-radius: 1rem;
+  background-color: #f6f0f0;
+  height: 10rem;
+  text-align: center;
+
+  .mio-header{
+    height: 2rem;
+    background-color: $text-primary;
+  }
+}
+
+
+
+.hero-section{
+  align-self: center;
+}

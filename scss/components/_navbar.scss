@@ -1,30 +1,27 @@
 $topbar-responsive-animation-type: fade-in; // or use slide-down or none
 
-
 .topbar-responsive {
-  background: transparent;
-  box-shadow: 0 0 1px 0;
-  padding: 0;
-  margin: 0;
+  padding: 0 .5rem;
 
   .topbar-responsive-logo {
+    display: flex;
+    color: $primary;
     vertical-align: middle;
   }
 
   .menu {
-    background: transparent;
+    background: $white;
 
     li:last-of-type {
       margin-right: 0;
     }
 
     a {
+      color: $white;
       transition: color 0.15s ease-in;
-      font-weight: bold;
-      margin: 0 1rem ;
 
       &:hover {
-        color: #219cea;
+        color: lighten($primary, 60%);
       }
 
       @media screen and (max-width: 39.9375em) {
@@ -33,9 +30,15 @@ $topbar-responsive-animation-type: fade-in; // or use slide-down or none
     }
 
     .topbar-responsive-button {
+      color: $white;
+      border-color: $white;
       border-radius: 5000px;
       transition: color 0.15s ease-in, border-color 0.15s ease-in;
-      margin: 0 1rem ;
+
+      &:hover {
+        color: lighten($primary, 60%);
+        border-color: lighten($primary, 60%);
+      }
 
       @media screen and (max-width: 39.9375em) {
         width: 100%;
@@ -48,12 +51,11 @@ $topbar-responsive-animation-type: fade-in; // or use slide-down or none
     padding: 0.75rem;
 
     .top-bar-title {
-      position: relative;
       width: 100%;
 
       span {
         position: absolute;
-        right: 0;
+        border: 1px solid $white;
         border-radius: 5px;
         padding: 0.25rem 0.45rem;
         top: 50%;
@@ -69,11 +71,10 @@ $topbar-responsive-animation-type: fade-in; // or use slide-down or none
 
 @keyframes fadeIn {
   from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    opacity:0;
+  } to {
+      opacity:1;
+    }
 }
 
 @keyframes slideDown {

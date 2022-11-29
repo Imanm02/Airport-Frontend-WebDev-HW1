@@ -1,0 +1,34 @@
+{
+  "tickets": [
+    {
+      "source_airport": "IKA",
+      "dest_airport": "DOH",
+      "duration": "",
+      "data": "",
+      "economy": {
+        "price": "2000",
+        "left_tickets": "9"
+      },
+      "business": {
+        "price": "5000",
+        "left_tickets": "60"
+      }
+    },
+    {
+      "source_airport": "IKA",
+      "dest_airport": "SIN"
+    },
+    {
+      "source_airport": "BOS",
+      "dest_airport": "ABC"
+    },
+    {
+      "source_airport": "DEF",
+      "dest_airport": "KLM"
+    },
+    {
+      "source_airport": "HIJ",
+      "dest_airport": "NOP"
+    }
+  ]
+}

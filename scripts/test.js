@@ -56,6 +56,7 @@ const data = []
 * */
 
 // iterate through the data and create a div for each ticket
+
 for (let i = 0; i < data.length; i++) {
     const ticket = data[i];
     const divContainer = document.createElement('div');
@@ -135,4 +136,3 @@ for (let i = 0; i < data.length; i++) {
     ticketsContainer.appendChild(divContainer);
 
 }
-

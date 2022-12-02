@@ -24,12 +24,27 @@ $marketing-site-footer-bg: $text-primary;
   }
 }
 
+
+
 .names-list {
+  list-style: none;
+  margin-right: 0;
+
   li {
     padding-bottom: 10px;
     font-size: larger;
   }
+
+  li:before{
+    content: "• ";
+    width: 1rem;
+    font-weight: 800;
+    color: white;
+  }
 }
+
+
+
 
 .marketing-site-footer-name {
   color: $white;

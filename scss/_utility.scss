@@ -9,16 +9,16 @@ html {
 }
 
 .flex-body-row-direction {
-  @include flex-section(row, $white);
+  @include flex-section(row, white);
   justify-content: center;
 }
 
 .flex-body-column-direction {
-  @include flex-section(column, $white);
+  @include flex-section(column, white);
 }
 
 .center-content {
-  @include flex-section(column, $white);
+  @include flex-section(column, white);
   align-self: center;
 }
 
@@ -26,3 +26,20 @@ html {
 input:required:invalid {
   box-shadow: none;
 }
+
+/* padding classes */
+.p-0 {
+  padding: 0;
+}
+
+/* margin classes */
+.m-0 {
+  margin: 0;
+}
+
+.icon-align{
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
+

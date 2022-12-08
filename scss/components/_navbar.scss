@@ -3,13 +3,22 @@ $topbar-responsive-animation-type: fade-in; // or use slide-down or none
 .topbar-responsive {
   padding: 0 .5rem;
   background-color: white;
-  box-shadow: 0px -3px 15px 0px;
+  box-shadow: -3px -7px 12px 2px;
   margin-bottom: 1rem;
 
   .topbar-responsive-logo {
     display: flex;
     color: $primary;
     vertical-align: middle;
+  }
+
+  .topbar-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    gap: 1.5rem;
   }
 
   .menu {
@@ -31,44 +40,11 @@ $topbar-responsive-animation-type: fade-in; // or use slide-down or none
         padding: 0.875rem 0;
       }
     }
-
-    .topbar-responsive-button {
-      color: white;
-      border-color: white;
-      border-radius: 5000px;
-      transition: color 0.15s ease-in, border-color 0.15s ease-in;
-
-      &:hover {
-        color: lighten($primary, 60%);
-        border-color: lighten($primary, 60%);
-      }
-
-      @media screen and (max-width: 39.9375em) {
-        width: 100%;
-        margin: 0.875rem 0;
-      }
-    }
   }
 
+  // reduce box-shadow on small screens
   @media screen and (max-width: 39.9375em) {
-    padding: 0.75rem;
-
-    .top-bar-title {
-      width: 100%;
-
-      span {
-        position: absolute;
-        border: 1px solid $white;
-        border-radius: 5px;
-        padding: 0.25rem 0.45rem;
-        top: 50%;
-        transform: translateY(-50%);
-
-        .menu-icon {
-          margin-bottom: 4px;
-        }
-      }
-    }
+    box-shadow: -3px -7px 12px 2px;
   }
 }
 
@@ -103,6 +79,39 @@ $topbar-responsive-animation-type: fade-in; // or use slide-down or none
     } @else {
       animation: none;
     }
+  }
+}
+
+.nav-button-container {
+  margin-left: 2rem;
+
+  .button {
+    width: 100px;
+    border-radius: 0.5rem;
+  }
+
+  // reduce margin left for small screens
+  @include breakpoint(small only) {
+    margin-left: 0;
+  }
+}
+
+
+.dashboard-container {
+  @include dropdown-container;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  .hero {
+    background-image: url("../assets/images/pannel_pic.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 120px;
+    padding: 10px;
+    border-radius: 1rem 1rem 0 0;
+    color: white;
   }
 }
 

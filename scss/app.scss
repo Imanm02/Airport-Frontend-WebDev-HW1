@@ -11,8 +11,8 @@
 
 // Grids (choose one)
 @include foundation-xy-grid-classes;
-// @include foundation-grid;
-// @include foundation-flex-grid;
+@include foundation-grid;
+@include foundation-flex-grid;
 
 // Generic components
 @include foundation-button;
@@ -72,4 +72,5 @@
 @import "components/_form";
 @import "components/_hero-section";
 @import "components/_button";
+@import "components/_footer";
 @import "_utility";

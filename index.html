@@ -1,11 +1,14 @@
 <!doctype html>
 <html class="no-js" lang="fa" dir="rtl">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>بیلیکو، برای سفر خود برنامه‌ریزی کنید!</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/component.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
@@ -14,6 +17,7 @@
 </head>
 
 <body class="flex-body-column-direction">
+    
 <!--Navbar goes here-->
 <div>
     <nav class="top-bar topbar-responsive">
@@ -81,14 +85,105 @@
 </div>
 <!---->
 
+
 <!--Header section goes here-->
 <div class="hero-section">
+    <!-- -->
     <img src="assets/images/aircraft.svg" alt="hero">
-    <div class="iman-mio">
-        <div class="mio-header">
+     <!--
+    <div class="iman-mio"
+    style="padding-top: 1rem; border: #00000029 solid 1px; border-radius: 2rem;  background-color: white; margin: 1rem;">
+    -->
 
+        <div class="mio-header"
+        style="margin-top: 20px;">
+
+            <!-- from here -->
+            <div class="controlsssss" 
+            style="margin: auto; margin-left: auto; margin-right: auto; align-content: center; text-align: center;">
+                <i class="fa fa-calendar"></i>&nbsp;&nbsp;تاریخ رفت
+            </div>
+
+            <input type="date" id="arrive" placeholder="arrive" class="floatLabel" name="arrive" value="<?php echo date('Y-m-d'); ?>"
+            style="text-align: center; position: relative; justify-content: center; align-items: center; border: #00000029 solid 1px; border-radius: 2rem; border: 3px solid green; border-radius: 2rem;">
+            
+
+            <div class="controlsssss" 
+            style="margin: auto; margin-left: auto; margin-right: auto; align-content: center; text-align: center;">
+                <i class="fa fa-calendar"></i>&nbsp;&nbsp;تاریخ برگشت
+            </div>
+
+            <input type="date" id="depart" placeholder="depart" class="floatLabel" name="depart" value="<?php echo date('Y-m-d'); ?>"
+            style="text-align: center; position: relative; justify-content: center; align-items: center; border: #00000029 solid 1px; border-radius: 2rem; border: 3px solid green; border-radius: 2rem;">
+
+            <div class="controlsssss" 
+            style="margin: auto; margin-left: auto; margin-right: auto; align-content: center; text-align: center;">
+                <i class="fas fa-location"></i>&nbsp;&nbsp;نام فرودگاه مبدا
+                <!-- ToDo, fixing icon-->
+            </div>
+
+            <form autocomplete="off" action="/action_page.php">
+                <div class="autocomplete">
+                  <input id="myInput" type="text" name="myCountry" placeholder="Origin Airport"
+                  style="text-align: center; position: relative; justify-content: center; align-items: center; border: 3px solid green; border-radius: 2rem;">
+                </div>
+            </form>
+
+            <div class="controlsssss" 
+            style="margin: auto; margin-left: auto; margin-right: auto; align-content: center; text-align: center;">
+                <i class="fas fa-location"></i>&nbsp;&nbsp;نام فرودگاه مقصد
+                <!-- ToDo, fixing icon-->
+            </div>
+
+            <form autocomplete="off" action="/action_page.php">
+                <div class="autocomplete">
+                  <input id="myInput2" type="text" name="myCountry" placeholder="Destination Airport"
+                  style="text-align: center; position: relative; justify-content: center; align-items: center; border: 3px solid green; border-radius: 2rem;">
+                </div>
+            </form>
+
+            <div class="controlsssss">
+                <label for="passenger"
+                style="margin: auto; margin-left: auto; margin-right: auto; align-content: center; text-align: center;">
+                تعداد مسافران</label>
+                <input type="number" id="passenger" name="total_passenger" placeholder="2" min="1" required
+                style="text-align: center; position: relative; justify-content: center; align-items: center; border: 3px solid green; border-radius: 2rem;">
+            </div>
+
+            <div class="controlsssss"
+            style="text-align: center;">
+
+            <button class="button-37" role="button"
+            style="
+            
+            background-color: #13aa52;
+	        border: 2px solid #13aa52;
+	        border-radius: 4px;
+	        box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+	        box-sizing: border-box;
+	        color: #fff;
+	        cursor: pointer;
+	        font-size: 16px;
+	        font-weight: 400;
+	        outline: none;
+	        outline: 0;
+	        padding: 10px 25px;
+	        text-align: center;
+	        transform: translateY(0);
+	        transition: transform 150ms, box-shadow 150ms;
+	        user-select: none;
+	        -webkit-user-select: none;
+	        touch-action: manipulation;">ثبت</button>
+
+            </div>
+
+            
+            <!-- to here -->
         </div>
+    <!--
     </div>
+    -->
+
 </div>
 <!---->
 
@@ -104,7 +199,7 @@
                 <p class="text-secondary typography-h4-100">
                     اولین قدم برای شروع یک مسافرت لذت بخش و رویایی انتخاب درست مقصد است. انتخاب مقصد نهایی به سفر
                     شما
-                    هدف و نظم می دهد.
+                    هدف و نظم می‌دهد.
                 </p>
             </div>
         </div>
@@ -247,6 +342,7 @@
 <script src="node_modules/what-input/dist/what-input.js"></script>
 <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
 <script src="app.js"></script>
+<script src="forms.js"></script>
 
 </body>
 </html>

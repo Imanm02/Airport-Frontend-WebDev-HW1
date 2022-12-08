@@ -96,44 +96,8 @@ function autocomplete(inp, arr) {
   }
   
   /*An array containing all the country names in the world:*/
-  var countries = [
-	"بین المللی شهید مدنی تبریز",
-"شهید باکری ارومیه",
-"خانه",
-"بین المللی اردبیل",
-"بین المللی شهید بهشتی اصفهان",
-"بین المللی پیام",
-"بوشهر",
-"منطقه نفتی بهرگان",
-"مهرآباد",
-"شهرکرد",
-"طبس",
-"سبزوار",
-"بجنورد",
-"بین المللی آبادان",
-"ماهشهر",
-"آغاجاری",
-"سمنان",
-"بین المللی زاهدان",
-"سراوان",
-"شهدای زابل",
-"بین‌المللی شهدای لامرد",
-"جهرم",
-"داراب",
-"سیرجان",
-"شهدای رفسنجان",
-"بین المللی کرمانشاه",
-"یاسوج",
-"سرداز جنگل رشت",
-"کلاله",
-"بین المللی دشت ناز ساری",
-"نوشهر",
-"بین المللی بندرعباس",
-"بین المللی قشم",
-"شهدای ابوموسی",
-"جزیره سیری",
-"شهید صدوقی یزد"
+  var airports = ["کرمان","سیستان و بلوچستان","خراسان جنوبی","فارس","خراسان رضوی","اصفهان","سمنان","یزد","هرمزگان","خوزستان","آذربایجان شرقی","آذربایجان غربی","کردستان","مرکزی","خراسان شمالی","لرستان","کرمانشاه","مازندران","بوشهر","گلستان","ایلام","همدان","زنجان","اردبیل","چهارمحال","قزوین","کهگیلویه","گیلان","تهران","قم","البرز"
   ];
   /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
-  autocomplete(document.getElementById("myInput"), countries);
-  autocomplete(document.getElementById("myInput2"), countries);
+  autocomplete(document.getElementById("myInput"), airports);
+  autocomplete(document.getElementById("myInput2"), airports);

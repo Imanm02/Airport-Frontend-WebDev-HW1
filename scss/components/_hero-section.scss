@@ -54,6 +54,20 @@ $hero-height: 80vh;
 		transform: translateY(-2px);
 	}
 }
+
+.floatLabel{
+	text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: #00000029 solid 1px;
+    border-radius: 2rem;
+    border: 3px solid green;
+    width: 300px;
+    padding: 5px;
+    margin-top: 0px;
+    margin-right: 353px;
+}
+
 @media (min-width: 768px) {
 	.button-37 {
 		padding: 10px 30px;

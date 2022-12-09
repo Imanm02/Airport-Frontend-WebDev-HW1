@@ -1,0 +1,47 @@
+
+.dashboard-container {
+  @include dropdown-container;
+  margin: 0;
+  padding: 0;
+  border-radius: 1rem 1rem 0 0;
+  border: solid 1px $text-secondary;
+  top: 60px !important;
+  // if screen is bigger than 450 px then set width to 450px otherwise set it to 100%
+  width: 350px;
+  @include breakpoint(small only) {
+    width: 100%;
+  }
+
+  .hero {
+    background-image: url("../assets/images/Hexagon.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 120px;
+    padding: 10px;
+    border-radius: 1rem 1rem 0 0;
+    color: white;
+  }
+}
+
+.trips-container {
+  border-bottom: solid 1px $text-secondary;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+
+.dashboard-footer {
+  color: white;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+
+  button{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}

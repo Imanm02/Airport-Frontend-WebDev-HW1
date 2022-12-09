@@ -95,23 +95,3 @@ $topbar-responsive-animation-type: fade-in; // or use slide-down or none
     margin-left: 0;
   }
 }
-
-
-.dashboard-container {
-  @include dropdown-container;
-  margin: 0;
-  padding: 0;
-  border: none;
-
-  .hero {
-    background-image: url("../assets/images/pannel_pic.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 120px;
-    padding: 10px;
-    border-radius: 1rem 1rem 0 0;
-    color: white;
-  }
-}
-

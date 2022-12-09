@@ -1,61 +1,36 @@
 $hero-height: 80vh;
 
 
-.iman-mio{
-  position: relative;
-  margin-top: -20px;
-  border-radius: 1rem;
-  background-color: #f6f0f0;
-  height: 10rem;
+.search-section {
+  display: flex;
+  flex-direction: row;
+  height: 2rem;
+  background-color: $text-primary;
+}
+
+.search-header {
+  color: white;
   text-align: center;
+}
 
-  .mio-header{
-    height: 2rem;
-    background-color: $text-primary;
+.input-field {
+  border: none;
+  // style input placeholder
+  &::placeholder {
+    text-align: center;
+    color: gray;
   }
 
-  .controlsssss{
-    // text-align: center;
-    width: 50%;
-    margin: auto;
-    margin-left: auto;
-    margin-right: auto;
+  // add border on focus
+  &:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
   }
 }
 
 
-
-.hero-section{
+.hero-section {
   align-self: center;
-}
-
-.button-37 {
-	background-color: #13aa52;
-	border: 1px solid #13aa52;
-	border-radius: 4px;
-	box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
-	box-sizing: border-box;
-	color: #fff;
-	cursor: pointer;
-	font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	outline: none;
-	outline: 0;
-	padding: 10px 25px;
-	text-align: center;
-	transform: translateY(0);
-	transition: transform 150ms, box-shadow 150ms;
-	user-select: none;
-	-webkit-user-select: none;
-	touch-action: manipulation;
-	&:hover {
-		box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
-		transform: translateY(-2px);
-	}
-}
-@media (min-width: 768px) {
-	.button-37 {
-		padding: 10px 30px;
-	}
+  align-items: center;
 }

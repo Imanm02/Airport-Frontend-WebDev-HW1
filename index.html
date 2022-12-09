@@ -9,7 +9,7 @@
     <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/component.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
     </style>
@@ -17,7 +17,7 @@
 </head>
 
 <body class="flex-body-column-direction">
-    
+
 <!--Navbar goes here-->
 <div>
     <nav class="top-bar topbar-responsive">
@@ -48,35 +48,149 @@
                 </a>
             </div>
 
-<!--            <div>-->
-<!--                <a-->
-<!--                        class="text-center text-secondary text-justify m-0 "-->
-<!--                        href="logIn.html"-->
-<!--                >-->
-<!--                    <i class="fa fa-sign-in fa-2x icon-align" aria-hidden="true"></i>-->
-<!--                    <i>-->
-<!--                        ورود یا ثبت‌نام-->
-<!--                    </i>-->
-<!--                </a>-->
-<!--            </div>-->
+            <!--            <div>-->
+            <!--                <a-->
+            <!--                        class="text-center text-secondary text-justify m-0 "-->
+            <!--                        href="logIn.html"-->
+            <!--                >-->
+            <!--                    <i class="fa fa-sign-in fa-2x icon-align" aria-hidden="true"></i>-->
+            <!--                    <i>-->
+            <!--                        ورود یا ثبت‌نام-->
+            <!--                    </i>-->
+            <!--                </a>-->
+            <!--            </div>-->
 
             <div>
                 <a
                         type="button"
                         class="text-center text-secondary text-justify m-0 "
                         data-toggle="dashboard"
+                        onclick="blurMainPageContent()"
                 >
                     <i class="fa fa-user fa-2x icon-align" aria-hidden="true"></i>
                     <i>
                         داشبورد
                     </i>
                 </a>
+
                 <div class="dashboard-container" data-position="bottom"
                      data-alignment="left" id="dashboard" data-dropdown data-auto-focus="true">
                     <div class="hero">
                         <h4>
                             حسین گلی
                         </h4>
+                        <p class="typography-h6-600">
+                            تهران | 09123456789
+                        </p>
+                    </div>
+                    <div>
+                        <div class="trips-plan">
+
+                            <h5 class="typography-h4-600 text-primary mb-0" style="margin-right: 0.4rem">
+                                سفرهای در پیش‌رو
+                            </h5>
+
+                            <div class="grid-x text-center" style="  margin-left: 0.5rem;  margin-right: 0.5rem;">
+
+                                <div class="cell small-2">
+                                    <p class="typography-h6-600 text-secondary">
+                                        <i class="fa fa-plane" aria-hidden="true"></i>
+                                        مبدا
+                                    </p>
+                                </div>
+                                <div class="cell small-3">
+                                    <p class="typography-h6-600 text-secondary">
+                                        <i class="fa fa-plane fa-rotate-180" aria-hidden="true"></i>
+                                        مقصد
+                                    </p>
+                                </div>
+                                <div class="cell small-3">
+                                    <p class="typography-h6-600 text-secondary">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        تاریخ
+                                    </p>
+                                </div>
+                                <div class="cell small-3">
+                                    <p class="typography-h6-600 text-secondary">
+                                        <i class="fa-solid fa-clock"></i>
+                                        ساعت
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <!-- first trip -->
+                            <div class="grid-x text-center trips-container">
+                                <div class="cell small-2">
+                                    <p class="typography-h6-600 m-0">
+                                        تهران
+                                    </p>
+                                </div>
+                                <div class="cell small-3">
+                                    <p class="typography-h6-600 m-0">
+                                        اصفهان
+                                    </p>
+                                </div>
+                                <div class="cell small-3">
+                                    <p class="typography-h6-600 m-0">
+                                        ۱۳۹۹/۰۱/۰۱
+                                    </p>
+                                </div>
+                                <div class="cell small-3">
+                                    <p class="typography-h6-600 m-0">
+                                        ۱۲:۰۰ صبح
+                                    </p>
+                                </div>
+                                <div class="cell small-1 icon-container">
+                                    <a>
+                                        <i class="fa fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- second trip -->
+                            <div class="grid-x text-center trips-container">
+                                <div class="cell small-2">
+                                    <p class="typography-h6-600 m-0">
+                                        مشهد
+                                    </p>
+                                </div>
+                                <div class="cell small-3">
+                                    <p class="typography-h6-600 m-0">
+                                        تهران
+                                    </p>
+                                </div>
+                                <div class="cell small-3">
+                                    <p class="typography-h6-600 m-0">
+                                        ۱۳۹۹/۰۱/۰۱
+                                    </p>
+                                </div>
+                                <div class="cell small-3">
+                                    <p class="typography-h6-600 m-0">
+                                        ۹:۰۰ شب
+                                    </p>
+                                </div>
+                                <div class="cell small-1 icon-container">
+                                    <a>
+                                        <i class="fa fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="dashboard-footer">
+                            <button class="text-primary-bold">
+                                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                خروج
+                            </button>
+
+                            <button class="text-primary">
+                                <i class="fa fa-cog" aria-hidden="true"></i>
+                                ویرایش پروفایل
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -86,254 +200,237 @@
 <!---->
 
 
-<!--Header section goes here-->
-<div class="hero-section">
-    <!-- -->
-    <img src="assets/images/aircraft.svg" alt="hero">
-     <!--
-    <div class="iman-mio"
-    style="padding-top: 1rem; border: #00000029 solid 1px; border-radius: 2rem;  background-color: white; margin: 1rem;">
-    -->
+<div id="main-page-content">
+    <!--Header section goes here-->
+    <div class="hero-section center-content">
+        <!-- -->
+        <img src="assets/images/aircraft.svg" alt="hero">
+        <!--
+       <div class="iman-mio"
+       style="padding-top: 1rem; border: #00000029 solid 1px; border-radius: 2rem;  background-color: white; margin: 1rem;">
+       -->
 
-        <div class="mio-header"
-        style="margin-top: 20px;">
+        <div class="search-section">
 
             <!-- from here -->
-            <div class="controlsssss" 
-            style="margin: auto; margin-left: auto; margin-right: auto; align-content: center; text-align: center;">
-                <i class="fa fa-calendar"></i>&nbsp;&nbsp;تاریخ رفت
-            </div>
-
-            <input type="date" id="arrive" placeholder="arrive" class="floatLabel" name="arrive" value="<?php echo date('Y-m-d'); ?>"
-            style="text-align: center; position: relative; justify-content: center; align-items: center; border: #00000029 solid 1px; border-radius: 2rem; border: 3px solid green; border-radius: 2rem;">
-            
-
-            <div class="controlsssss" 
-            style="margin: auto; margin-left: auto; margin-right: auto; align-content: center; text-align: center;">
-                <i class="fa fa-calendar"></i>&nbsp;&nbsp;تاریخ برگشت
-            </div>
-
-            <input type="date" id="depart" placeholder="depart" class="floatLabel" name="depart" value="<?php echo date('Y-m-d'); ?>"
-            style="text-align: center; position: relative; justify-content: center; align-items: center; border: #00000029 solid 1px; border-radius: 2rem; border: 3px solid green; border-radius: 2rem;">
-
-            <div class="controlsssss" 
-            style="margin: auto; margin-left: auto; margin-right: auto; align-content: center; text-align: center;">
-                <i class="fas fa-location"></i>&nbsp;&nbsp;نام فرودگاه مبدا
-                <!-- ToDo, fixing icon-->
-            </div>
-
-            <form autocomplete="off" action="/action_page.php">
-                <div class="autocomplete">
-                  <input id="myInput" type="text" name="myCountry" placeholder="Origin Airport"
-                  style="text-align: center; position: relative; justify-content: center; align-items: center; border: 3px solid green; border-radius: 2rem;">
+            <div>
+                <div class="search-header">
+                    <i class="fa fa-calendar"></i>&nbsp;&nbsp;تاریخ رفت
                 </div>
-            </form>
 
-            <div class="controlsssss" 
-            style="margin: auto; margin-left: auto; margin-right: auto; align-content: center; text-align: center;">
-                <i class="fas fa-location"></i>&nbsp;&nbsp;نام فرودگاه مقصد
-                <!-- ToDo, fixing icon-->
+                <input class="input-field" type="date" id="arrive" placeholder="arrive" name="arrive"
+                       value="<?php echo date('Y-m-d'); ?>">
+
             </div>
 
-            <form autocomplete="off" action="/action_page.php">
-                <div class="autocomplete">
-                  <input id="myInput2" type="text" name="myCountry" placeholder="Destination Airport"
-                  style="text-align: center; position: relative; justify-content: center; align-items: center; border: 3px solid green; border-radius: 2rem;">
+            <div>
+                <div class="search-header"
+                     style="margin: auto; align-content: center; text-align: center;">
+                    <i class="fa fa-calendar"></i>&nbsp;&nbsp;تاریخ برگشت
                 </div>
-            </form>
 
-            <div class="controlsssss">
-                <label for="passenger"
-                style="margin: auto; margin-left: auto; margin-right: auto; align-content: center; text-align: center;">
-                تعداد مسافران</label>
-                <input type="number" id="passenger" name="total_passenger" placeholder="2" min="1" required
-                style="text-align: center; position: relative; justify-content: center; align-items: center; border: 3px solid green; border-radius: 2rem;">
+                <input type="date" id="depart" placeholder="depart" class="input-field" name="depart"
+                       value="<?php echo date('Y-m-d'); ?>">
+            </div>
+            <div>
+
+
+                <div class="search-header">
+                    <i class="fas fa-location"></i>&nbsp;&nbsp;نام فرودگاه مبدا
+                    <!-- ToDo, fixing icon-->
+                </div>
+
+                <form autocomplete="off">
+                    <div class="autocomplete">
+                        <input id="myInput" type="text" class="input-field" name="myCountry"
+                               placeholder="Origin Airport">
+                    </div>
+                </form>
+            </div>
+            <div>
+                <div class="search-header"
+                     style="margin: auto; align-content: center; text-align: center;">
+                    <i class="fas fa-location"></i>&nbsp;&nbsp;نام فرودگاه مقصد
+                    <!-- ToDo, fixing icon-->
+                </div>
+
+                <form autocomplete="off">
+                    <div class="autocomplete">
+                        <input id="myInput2" class="input-field" type="text" name="myCountry"
+                               placeholder="Destination Airport">
+                    </div>
+                </form>
             </div>
 
-            <div class="controlsssss"
-            style="text-align: center;">
+            <div>
+                <div class="search-header">
+                    تعداد مسافران
+                    <input type="number" class="input-field" id="passenger" name="total_passenger" placeholder="2"
+                           min="1" required>
+                </div>
+            </div>
+            <div class="search-header"
+                 style="text-align: center;">
 
-            <button class="button-37" role="button"
-            style="
-            
-            background-color: #13aa52;
-	        border: 2px solid #13aa52;
-	        border-radius: 4px;
-	        box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
-	        box-sizing: border-box;
-	        color: #fff;
-	        cursor: pointer;
-	        font-size: 16px;
-	        font-weight: 400;
-	        outline: none;
-	        outline: 0;
-	        padding: 10px 25px;
-	        text-align: center;
-	        transform: translateY(0);
-	        transition: transform 150ms, box-shadow 150ms;
-	        user-select: none;
-	        -webkit-user-select: none;
-	        touch-action: manipulation;">ثبت</button>
+                <button class="button " role="button">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    جستجو
+                </button>
 
             </div>
 
-            
+
             <!-- to here -->
         </div>
-    <!--
+
     </div>
-    -->
+    <!---->
 
-</div>
-<!---->
+    <!--Website Description section goes here-->
 
-<!--Website Description section goes here-->
-
-<div class="section-grid">
-    <div class="grid-x">
-        <div class="cell small-12 medium-5 large-5 center-content">
-            <div>
-                <h2 class="text-primary typography-h1-600">
-                    برای سفر خود برنامه‌ریزی کنید!
-                </h2>
-                <p class="text-secondary typography-h4-100">
-                    اولین قدم برای شروع یک مسافرت لذت بخش و رویایی انتخاب درست مقصد است. انتخاب مقصد نهایی به سفر
-                    شما
-                    هدف و نظم می‌دهد.
-                </p>
+    <div class="section-grid">
+        <div class="grid-x">
+            <div class="cell small-12 medium-5 large-5 center-content">
+                <div>
+                    <h2 class="text-primary typography-h1-600">
+                        برای سفر خود برنامه‌ریزی کنید!
+                    </h2>
+                    <p class="text-secondary typography-h4-100">
+                        اولین قدم برای شروع یک مسافرت لذت بخش و رویایی انتخاب درست مقصد است. انتخاب مقصد نهایی به سفر
+                        شما
+                        هدف و نظم می‌دهد.
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="cell small-12 medium-7 large-7">
-            <div class="flex-container">
-                <img
-                        src="assets/images/travelers.svg"
-                        alt="advertisement"
-                        style="width: 100%; height: 100%;padding-left: 2rem"
-                >
+            <div class="cell small-12 medium-7 large-7">
+                <div class="flex-container">
+                    <img
+                            src="assets/images/travelers.svg"
+                            alt="advertisement"
+                            style="width: 100%; height: 100%;padding-left: 2rem"
+                    >
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="section-grid" style="direction: ltr">
-    <div class="grid-x">
-        <div class="cell small-12 medium-5 large-5 center-content" style="direction: rtl">
-            <div>
-                <h2 class="text-primary typography-h1-600">
-                    برای سفر خود برنامه‌ریزی کنید!
-                </h2>
-                <p class="text-secondary typography-h4-100">
-                    اولین قدم برای شروع یک مسافرت لذت بخش و رویایی انتخاب درست مقصد است. انتخاب مقصد نهایی به سفر
-                    شما
-                    هدف و نظم می دهد.
-                </p>
+    <div class="section-grid" style="direction: ltr">
+        <div class="grid-x">
+            <div class="cell small-12 medium-5 large-5 center-content" style="direction: rtl">
+                <div>
+                    <h2 class="text-primary typography-h1-600">
+                        برای سفر خود برنامه‌ریزی کنید!
+                    </h2>
+                    <p class="text-secondary typography-h4-100">
+                        اولین قدم برای شروع یک مسافرت لذت بخش و رویایی انتخاب درست مقصد است. انتخاب مقصد نهایی به سفر
+                        شما
+                        هدف و نظم می دهد.
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="cell small-12 medium-7 large-7">
-            <div class="flex-container">
-                <img
-                        src="assets/images/airport.svg"
-                        alt="advertisement"
-                        style="width: 100%; height: 100%;padding-left: 2rem"
-                >
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="section-grid">
-    <div class="grid-x">
-        <div class="cell small-12 medium-5 large-5 center-content">
-            <div>
-                <h2 class="text-primary typography-h1-600">
-                    برای سفر خود برنامه‌ریزی کنید!
-                </h2>
-                <p class="text-secondary typography-h4-100">
-                    اولین قدم برای شروع یک مسافرت لذت بخش و رویایی انتخاب درست مقصد است. انتخاب مقصد نهایی به سفر
-                    شما
-                    هدف و نظم می دهد.
-                </p>
-            </div>
-        </div>
-        <div class="cell small-12 medium-7 large-7">
-            <div class="flex-container">
-                <img
-                        src="assets/images/travel_booking.svg"
-                        alt="advertisement"
-                        style="width: 100%; height: 100%;padding-left: 2rem; transform: scale(-1, 1)"
-                >
+            <div class="cell small-12 medium-7 large-7">
+                <div class="flex-container">
+                    <img
+                            src="assets/images/airport.svg"
+                            alt="advertisement"
+                            style="width: 100%; height: 100%;padding-left: 2rem"
+                    >
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-
-<!--<footer style="direction: ltr">-->
-<!--    <p> هستی کریمی </p>-->
-<!--    <p> ایمان محمدی </p>-->
-<!--    <p> آرش یادگاری </p>-->
-<!--</footer>-->
-<footer class="marketing-site-footer">
-    <div class="row medium-unstack">
-        <div class="medium-4 columns">
-            <h4 class="marketing-site-footer-name"> تیم ما <i class="fa fa-child"></i></h4>
-            <ul class="names-list">
-                <li> آرش یادگاری </li>
-                <li> ایمان محمدی </li>
-                <li> هستی کریمی </li>
-            </ul>
-
-
-            <!--            <p style="margin-right: 1rem"> آرش یادگاری </p>-->
-<!--            <p style="margin-right: 1rem"> ایمان محمدی </p>-->
-<!--            <p style="margin-right: 1rem"> هستی کریمی </p>-->
-        </div>
-        <div class="medium-4 columns">
-            <h4 class="marketing-site-footer-title">تماس با ما</h4>
-            <div class="marketing-site-footer-block marketing-icons">
-                <i class="fa fa-map-marker" aria-hidden="true" style="color: white"></i>
-                <p>خیابان آزادی، دانشگاه صنعتی شریف</p>
+    <div class="section-grid">
+        <div class="grid-x">
+            <div class="cell small-12 medium-5 large-5 center-content">
+                <div>
+                    <h2 class="text-primary typography-h1-600">
+                        برای سفر خود برنامه‌ریزی کنید!
+                    </h2>
+                    <p class="text-secondary typography-h4-100">
+                        اولین قدم برای شروع یک مسافرت لذت بخش و رویایی انتخاب درست مقصد است. انتخاب مقصد نهایی به سفر
+                        شما
+                        هدف و نظم می دهد.
+                    </p>
+                </div>
             </div>
-            <div class="marketing-site-footer-block marketing-icons">
-                <i class="fa fa-phone" aria-hidden="true" style="color: white"></i>
-                <p style="direction: ltr">+98 21-12345678</p>
-            </div>
-            <div class="marketing-site-footer-block marketing-icons">
-                <i class="fa fa-envelope-o" aria-hidden="true" style="color: white"></i>
-                <p style="direction: ltr">biliko@fakeemail.com</p>
-            </div>
-        </div>
-        <div class="medium-4 columns">
-            <h4 class="marketing-site-footer-title">درباره‌ی ما</h4>
-            <div class="row small-up-3 marketing-site-footer-block">
-                <p>تیم بیلیکو در سال ۱۴۰۱ شروع به فعالیت کرد.</p>
-                <p>این تیم متشکل از چند جوان خوش نام و با انگیزه است و قصد دارد جهان را تکان دهد.</p>
-                <p>بیلیکو تلاش دارد تا فرآیند خرید بلیت را برای مشتریان تسهیل کند.</p>
-
+            <div class="cell small-12 medium-7 large-7">
+                <div class="flex-container">
+                    <img
+                            src="assets/images/travel_booking.svg"
+                            alt="advertisement"
+                            style="width: 100%; height: 100%;padding-left: 2rem; transform: scale(-1, 1)"
+                    >
+                </div>
             </div>
         </div>
     </div>
-    <div class="marketing-site-footer-bottom" >
-        <div class="row large-unstack align-middle">
-            <div class="column">
-                <p>&copy; کلیه‌ی حقوق متعلق به بیلیکو می‌باشد.</p>
-            </div>
-            <div class="column" >
-                <ul class="menu marketing-site-footer-bottom-links">
-                    <li><a href="#">خانه</a></li>
-                    <li><a href="#">درباره‌ی ما</a></li>
-                    <li><a href="#">خدمات</a></li>
-                    <li><a href="#">فرصت‌های شغلی</a></li>
-                    <li><a href="#">اخبار</a></li>
-                    <li><a href="#">تماس با ما</a></li>
+
+
+    <!--<footer style="direction: ltr">-->
+    <!--    <p> هستی کریمی </p>-->
+    <!--    <p> ایمان محمدی </p>-->
+    <!--    <p> آرش یادگاری </p>-->
+    <!--</footer>-->
+    <footer class="marketing-site-footer">
+        <div class="row medium-unstack">
+            <div class="medium-4 columns">
+                <h4 class="marketing-site-footer-name"> تیم ما <i class="fa fa-child"></i></h4>
+                <ul class="names-list">
+                    <li> آرش یادگاری</li>
+                    <li> ایمان محمدی</li>
+                    <li> هستی کریمی</li>
                 </ul>
+
+
+                <!--            <p style="margin-right: 1rem"> آرش یادگاری </p>-->
+                <!--            <p style="margin-right: 1rem"> ایمان محمدی </p>-->
+                <!--            <p style="margin-right: 1rem"> هستی کریمی </p>-->
+            </div>
+            <div class="medium-4 columns">
+                <h4 class="marketing-site-footer-title">تماس با ما</h4>
+                <div class="marketing-site-footer-block marketing-icons">
+                    <i class="fa fa-map-marker" aria-hidden="true" style="color: white"></i>
+                    <p>خیابان آزادی، دانشگاه صنعتی شریف</p>
+                </div>
+                <div class="marketing-site-footer-block marketing-icons">
+                    <i class="fa fa-phone" aria-hidden="true" style="color: white"></i>
+                    <p style="direction: ltr">+98 21-12345678</p>
+                </div>
+                <div class="marketing-site-footer-block marketing-icons">
+                    <i class="fa fa-envelope-o" aria-hidden="true" style="color: white"></i>
+                    <p style="direction: ltr">biliko@fakeemail.com</p>
+                </div>
+            </div>
+            <div class="medium-4 columns">
+                <h4 class="marketing-site-footer-title">درباره‌ی ما</h4>
+                <div class="row small-up-3 marketing-site-footer-block">
+                    <p>تیم بیلیکو در سال ۱۴۰۱ شروع به فعالیت کرد.</p>
+                    <p>این تیم متشکل از چند جوان خوش نام و با انگیزه است و قصد دارد جهان را تکان دهد.</p>
+                    <p>بیلیکو تلاش دارد تا فرآیند خرید بلیت را برای مشتریان تسهیل کند.</p>
+
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-
-
-
+        <div class="marketing-site-footer-bottom">
+            <div class="row large-unstack align-middle">
+                <div class="column">
+                    <p>&copy; کلیه‌ی حقوق متعلق به بیلیکو می‌باشد.</p>
+                </div>
+                <div class="column">
+                    <ul class="menu marketing-site-footer-bottom-links">
+                        <li><a href="#">خانه</a></li>
+                        <li><a href="#">درباره‌ی ما</a></li>
+                        <li><a href="#">خدمات</a></li>
+                        <li><a href="#">فرصت‌های شغلی</a></li>
+                        <li><a href="#">اخبار</a></li>
+                        <li><a href="#">تماس با ما</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
 
 <!---->
 
@@ -343,6 +440,7 @@
 <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
 <script src="app.js"></script>
 <script src="forms.js"></script>
+<script src="scripts/overlayEffect.js"></script>
 
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="fa" dir="rtl">
+<html lang="fa" dir="rtl">
 
 <head>
     <meta charset="utf-8">
@@ -35,8 +35,14 @@
                 </h1>
             </a>
         </div>
-        <div class="nav-button-container topbar-items">
-            <div>
+        <div class="topbar-menu-container">
+            <!-- create a button with 3 line icon which is displayed in small screens-->
+            <button type="button" class="topbar-breadcrumb"
+                    id="mobile-appbar-button"
+            >
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </button>
+            <div class="topbar-menu-icon">
                 <a
                         class="text-center text-secondary text-justify m-0 "
                         href="logIn.html"
@@ -47,20 +53,19 @@
                     </i>
                 </a>
             </div>
+            <div class="topbar-menu-icon">
+                <a
+                        class="text-center text-secondary text-justify m-0 "
+                        href="logIn.html"
+                >
+                    <i class="fa fa-sign-in fa-2x icon-align" aria-hidden="true"></i>
+                    <i>
+                        ورود یا ثبت‌نام
+                    </i>
+                </a>
+            </div>
 
-            <!--            <div>-->
-            <!--                <a-->
-            <!--                        class="text-center text-secondary text-justify m-0 "-->
-            <!--                        href="logIn.html"-->
-            <!--                >-->
-            <!--                    <i class="fa fa-sign-in fa-2x icon-align" aria-hidden="true"></i>-->
-            <!--                    <i>-->
-            <!--                        ورود یا ثبت‌نام-->
-            <!--                    </i>-->
-            <!--                </a>-->
-            <!--            </div>-->
-
-            <div>
+            <div class="topbar-menu-icon">
                 <a
                         type="button"
                         class="text-center text-secondary text-justify m-0 "
@@ -196,95 +201,227 @@
             </div>
         </div>
     </nav>
+
+    <div id="menu-mobile" class="is-hidden">
+        <div>
+            <div class="topbar-menu-icon mobile-icon">
+                <a
+                        class="text-center text-secondary text-justify"
+                        href="logIn.html"
+                >
+                    <i class="fa fa-question icon-align" aria-hidden="true"></i>
+                    <i>
+                        تماس با پشتیبانی
+                    </i>
+                </a>
+            </div>
+            <div class="topbar-menu-icon mobile-icon">
+                <a
+                        class="text-center text-secondary text-justify"
+                        href="logIn.html"
+                >
+                    <i class="fa fa-sign-in icon-align" aria-hidden="true"></i>
+                    <i>
+                        ورود یا ثبت‌نام
+                    </i>
+                </a>
+            </div>
+
+            <div class="topbar-menu-icon mobile-icon">
+                <a
+                        type="button"
+                        class="text-center text-secondary text-justify"
+                        data-toggle="offCanvasBottom1"
+                >
+                    <i class="fa fa-user icon-align" aria-hidden="true"></i>
+                    <i>
+                        داشبورد
+                    </i>
+                </a>
+                <div class="off-canvas position-bottom" id="offCanvasBottom1" data-off-canvas>
+                    <!-- Your menu or Off-canvas content goes here -->
+                    <h5 class="typography-h4-600 text-primary mb-0" style="margin-right: 0.4rem">
+                        سفرهای در پیش‌رو
+                    </h5>
+
+                    <div class="grid-x text-center" style="  margin-left: 0.5rem;  margin-right: 0.5rem;">
+
+                        <div class="cell small-2">
+                            <p class="typography-h6-600 text-secondary">
+                                <i class="fa fa-plane" aria-hidden="true"></i>
+                                مبدا
+                            </p>
+                        </div>
+                        <div class="cell small-3">
+                            <p class="typography-h6-600 text-secondary">
+                                <i class="fa fa-plane fa-rotate-180" aria-hidden="true"></i>
+                                مقصد
+                            </p>
+                        </div>
+                        <div class="cell small-3">
+                            <p class="typography-h6-600 text-secondary">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                تاریخ
+                            </p>
+                        </div>
+                        <div class="cell small-3">
+                            <p class="typography-h6-600 text-secondary">
+                                <i class="fa-solid fa-clock"></i>
+                                ساعت
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- first trip -->
+                    <div class="grid-x text-center trips-container">
+                        <div class="cell small-2">
+                            <p class="typography-h6-600 m-0">
+                                تهران
+                            </p>
+                        </div>
+                        <div class="cell small-3">
+                            <p class="typography-h6-600 m-0">
+                                اصفهان
+                            </p>
+                        </div>
+                        <div class="cell small-3">
+                            <p class="typography-h6-600 m-0">
+                                ۱۳۹۹/۰۱/۰۱
+                            </p>
+                        </div>
+                        <div class="cell small-3">
+                            <p class="typography-h6-600 m-0">
+                                ۱۲:۰۰ صبح
+                            </p>
+                        </div>
+                        <div class="cell small-1 icon-container">
+                            <a>
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- second trip -->
+                    <div class="grid-x text-center trips-container">
+                        <div class="cell small-2">
+                            <p class="typography-h6-600 m-0">
+                                مشهد
+                            </p>
+                        </div>
+                        <div class="cell small-3">
+                            <p class="typography-h6-600 m-0">
+                                تهران
+                            </p>
+                        </div>
+                        <div class="cell small-3">
+                            <p class="typography-h6-600 m-0">
+                                ۱۳۹۹/۰۱/۰۱
+                            </p>
+                        </div>
+                        <div class="cell small-3">
+                            <p class="typography-h6-600 m-0">
+                                ۹:۰۰ شب
+                            </p>
+                        </div>
+                        <div class="cell small-1 icon-container">
+                            <a>
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <!---->
 
 
 <div id="main-page-content">
     <!--Header section goes here-->
-    <div class="hero-section center-content">
-        <!-- -->
-        <img src="assets/images/aircraft.svg" alt="hero">
-        <!--
-       <div class="iman-mio"
-       style="padding-top: 1rem; border: #00000029 solid 1px; border-radius: 2rem;  background-color: white; margin: 1rem;">
-       -->
+    <!--    <div class="hero-section center-content">-->
+    <!--        &lt;!&ndash; &ndash;&gt;-->
+    <!--        <img src="assets/images/aircraft.svg" alt="hero">-->
+    <!--        &lt;!&ndash;-->
+    <!--       <div class="iman-mio"-->
+    <!--       style="padding-top: 1rem; border: #00000029 solid 1px; border-radius: 2rem;  background-color: white; margin: 1rem;">-->
+    <!--       &ndash;&gt;-->
 
-        <div class="search-section">
+    <!--        <div class="search-section">-->
 
-            <!-- from here -->
-            <div>
-                <div class="search-header">
-                    <i class="fa fa-calendar"></i>&nbsp;&nbsp;تاریخ رفت
-                </div>
+    <!--            &lt;!&ndash; from here &ndash;&gt;-->
+    <!--            <div>-->
+    <!--                <div class="search-header">-->
+    <!--                    <i class="fa fa-calendar"></i>&nbsp;&nbsp;تاریخ رفت-->
+    <!--                </div>-->
 
-                <input class="input-field" type="date" id="arrive" placeholder="arrive" name="arrive"
-                       value="<?php echo date('Y-m-d'); ?>">
+    <!--                <input class="input-field" type="date" id="arrive" placeholder="arrive" name="arrive"-->
+    <!--                       value="<?php echo date('Y-m-d'); ?>">-->
 
-            </div>
+    <!--            </div>-->
 
-            <div>
-                <div class="search-header"
-                     style="margin: auto; align-content: center; text-align: center;">
-                    <i class="fa fa-calendar"></i>&nbsp;&nbsp;تاریخ برگشت
-                </div>
+    <!--            <div>-->
+    <!--                <div class="search-header"-->
+    <!--                     style="margin: auto; align-content: center; text-align: center;">-->
+    <!--                    <i class="fa fa-calendar"></i>&nbsp;&nbsp;تاریخ برگشت-->
+    <!--                </div>-->
 
-                <input type="date" id="depart" placeholder="depart" class="input-field" name="depart"
-                       value="<?php echo date('Y-m-d'); ?>">
-            </div>
-            <div>
-
-
-                <div class="search-header">
-                    <i class="fas fa-location"></i>&nbsp;&nbsp;نام فرودگاه مبدا
-                    <!-- ToDo, fixing icon-->
-                </div>
-
-                <form autocomplete="off">
-                    <div class="autocomplete">
-                        <input id="myInput" type="text" class="input-field" name="myCountry"
-                               placeholder="Origin Airport">
-                    </div>
-                </form>
-            </div>
-            <div>
-                <div class="search-header"
-                     style="margin: auto; align-content: center; text-align: center;">
-                    <i class="fas fa-location"></i>&nbsp;&nbsp;نام فرودگاه مقصد
-                    <!-- ToDo, fixing icon-->
-                </div>
-
-                <form autocomplete="off">
-                    <div class="autocomplete">
-                        <input id="myInput2" class="input-field" type="text" name="myCountry"
-                               placeholder="Destination Airport">
-                    </div>
-                </form>
-            </div>
-
-            <div>
-                <div class="search-header">
-                    تعداد مسافران
-                    <input type="number" class="input-field" id="passenger" name="total_passenger" placeholder="2"
-                           min="1" required>
-                </div>
-            </div>
-            <div class="search-header"
-                 style="text-align: center;">
-
-                <button class="button " role="button">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                    جستجو
-                </button>
-
-            </div>
+    <!--                <input type="date" id="depart" placeholder="depart" class="input-field" name="depart"-->
+    <!--                       value="<?php echo date('Y-m-d'); ?>">-->
+    <!--            </div>-->
+    <!--            <div>-->
 
 
-            <!-- to here -->
-        </div>
+    <!--                <div class="search-header">-->
+    <!--                    <i class="fas fa-location"></i>&nbsp;&nbsp;نام فرودگاه مبدا-->
+    <!--                    &lt;!&ndash; ToDo, fixing icon&ndash;&gt;-->
+    <!--                </div>-->
 
-    </div>
-    <!---->
+    <!--                <form autocomplete="off">-->
+    <!--                    <div class="autocomplete">-->
+    <!--                        <input id="myInput" type="text" class="input-field" name="myCountry"-->
+    <!--                               placeholder="Origin Airport">-->
+    <!--                    </div>-->
+    <!--                </form>-->
+    <!--            </div>-->
+    <!--            <div>-->
+    <!--                <div class="search-header"-->
+    <!--                     style="margin: auto; align-content: center; text-align: center;">-->
+    <!--                    <i class="fas fa-location"></i>&nbsp;&nbsp;نام فرودگاه مقصد-->
+    <!--                    &lt;!&ndash; ToDo, fixing icon&ndash;&gt;-->
+    <!--                </div>-->
+
+    <!--                <form autocomplete="off">-->
+    <!--                    <div class="autocomplete">-->
+    <!--                        <input id="myInput2" class="input-field" type="text" name="myCountry"-->
+    <!--                               placeholder="Destination Airport">-->
+    <!--                    </div>-->
+    <!--                </form>-->
+    <!--            </div>-->
+
+    <!--            <div>-->
+    <!--                <div class="search-header">-->
+    <!--                    تعداد مسافران-->
+    <!--                    <input type="number" class="input-field" id="passenger" name="total_passenger" placeholder="2"-->
+    <!--                           min="1" required>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="search-header"-->
+    <!--                 style="text-align: center;">-->
+
+    <!--                <button class="button " role="button">-->
+    <!--                    <i class="fa fa-search" aria-hidden="true"></i>-->
+    <!--                    جستجو-->
+    <!--                </button>-->
+
+    <!--            </div>-->
+
+
+    <!--            &lt;!&ndash; to here &ndash;&gt;-->
+    <!--        </div>-->
+
+    <!--    </div>-->
+    <!--    &lt;!&ndash;&ndash;&gt;-->
 
     <!--Website Description section goes here-->
 
@@ -441,6 +578,7 @@
 <script src="app.js"></script>
 <script src="forms.js"></script>
 <script src="scripts/overlayEffect.js"></script>
+<script src="scripts/mobileAppBar.js"></script>
 
 </body>
 </html>

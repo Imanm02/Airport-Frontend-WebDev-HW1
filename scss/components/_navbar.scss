@@ -5,6 +5,8 @@ $topbar-responsive-animation-type: fade-in; // or use slide-down or none
   background-color: white;
   box-shadow: -3px -7px 12px 2px;
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
 
   .topbar-responsive-logo {
     display: flex;
@@ -12,14 +14,32 @@ $topbar-responsive-animation-type: fade-in; // or use slide-down or none
     vertical-align: middle;
   }
 
-  .topbar-items {
+  .topbar-menu-container {
+    margin-left: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0;
     list-style: none;
     gap: 1.5rem;
+
+    .topbar-menu-icon {
+      display: none;
+      // if screen is medium or bigger than show the menu icon
+      @include breakpoint(medium) {
+        display: block;
+      }
+    }
+
+    .topbar-breadcrumb {
+      display: none;
+      // only show in small screens
+      @include breakpoint(small only) {
+        display: block;
+      }
+    }
   }
+
 
   .menu {
     background: white;
@@ -94,4 +114,18 @@ $topbar-responsive-animation-type: fade-in; // or use slide-down or none
   @include breakpoint(small only) {
     margin-left: 0;
   }
+}
+
+
+#menu-mobile {
+  display: none;
+  // only show in small screens
+  @include breakpoint(small only) {
+    display: block;
+  }
+
+}
+
+.mobile-icon {
+  margin-right: 2rem;
 }

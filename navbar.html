@@ -1,0 +1,214 @@
+<!doctype html>
+<html  lang="fa" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بیلیکو، برای سفر خود برنامه‌ریزی کنید!</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+    </style>
+
+</head>
+
+<body class="flex-body-column-direction">
+
+<!--Navbar goes here-->
+<div>
+    <nav class="top-bar topbar-responsive">
+        <div class="top-bar-title">
+            <a class="topbar-responsive-logo" href="#">
+                <div style="display: flex; align-items: center">
+                    <img
+                            src="assets/images/logo.png"
+                            style="margin-left: 1rem; width: 50px; height: 50px"
+                            alt="logo"/>
+                </div>
+                <h1 class="primary typography-h4-500"
+                    style="display: flex; flex-direction: column; align-self: center; color: #1FABE0; margin: 0">
+                    بیلیکو
+                </h1>
+            </a>
+        </div>
+        <div class="topbar-menu-container">
+            <!-- create a button with 3 line icon which is displayed in small screens-->
+            <button type="button" class="topbar-breadcrumb"
+            >
+
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </button>
+            <div class="topbar-menu-icon">
+                <a
+                        class="text-center text-secondary text-justify m-0 "
+                        href="logIn.html"
+                >
+                    <i class="fa fa-question fa-2x icon-align" aria-hidden="true"></i>
+                    <i>
+                        تماس با پشتیبانی
+                    </i>
+                </a>
+            </div>
+            <div class="topbar-menu-icon">
+                <a
+                        class="text-center text-secondary text-justify m-0 "
+                        href="logIn.html"
+                >
+                    <i class="fa fa-sign-in fa-2x icon-align" aria-hidden="true"></i>
+                    <i>
+                        ورود یا ثبت‌نام
+                    </i>
+                </a>
+            </div>
+
+            <div class="topbar-menu-icon">
+                <a
+                        type="button"
+                        class="text-center text-secondary text-justify m-0 "
+                        data-toggle="dashboard"
+                        onclick="blurMainPageContent()"
+                >
+                    <i class="fa fa-user fa-2x icon-align" aria-hidden="true"></i>
+                    <i>
+                        داشبورد
+                    </i>
+                </a>
+
+                <div class="dashboard-container" data-position="bottom"
+                     data-alignment="left" id="dashboard" data-dropdown data-auto-focus="true">
+                    <div class="hero">
+                        <h4>
+                            حسین گلی
+                        </h4>
+                        <p class="typography-h6-600">
+                            تهران | 09123456789
+                        </p>
+                    </div>
+                    <div>
+                        <div class="trips-plan">
+
+                            <h5 class="typography-h4-600 text-primary mb-0" style="margin-right: 0.4rem">
+                                سفرهای در پیش‌رو
+                            </h5>
+
+                            <div class="grid-x text-center" style="  margin-left: 0.5rem;  margin-right: 0.5rem;">
+
+                                <div class="cell small-2">
+                                    <p class="typography-h6-600 text-secondary">
+                                        <i class="fa fa-plane" aria-hidden="true"></i>
+                                        مبدا
+                                    </p>
+                                </div>
+                                <div class="cell small-3">
+                                    <p class="typography-h6-600 text-secondary">
+                                        <i class="fa fa-plane fa-rotate-180" aria-hidden="true"></i>
+                                        مقصد
+                                    </p>
+                                </div>
+                                <div class="cell small-3">
+                                    <p class="typography-h6-600 text-secondary">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        تاریخ
+                                    </p>
+                                </div>
+                                <div class="cell small-3">
+                                    <p class="typography-h6-600 text-secondary">
+                                        <i class="fa-solid fa-clock"></i>
+                                        ساعت
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <!-- first trip -->
+                            <div class="grid-x text-center trips-container">
+                                <div class="cell small-2">
+                                    <p class="typography-h6-600 m-0">
+                                        تهران
+                                    </p>
+                                </div>
+                                <div class="cell small-3">
+                                    <p class="typography-h6-600 m-0">
+                                        اصفهان
+                                    </p>
+                                </div>
+                                <div class="cell small-3">
+                                    <p class="typography-h6-600 m-0">
+                                        ۱۳۹۹/۰۱/۰۱
+                                    </p>
+                                </div>
+                                <div class="cell small-3">
+                                    <p class="typography-h6-600 m-0">
+                                        ۱۲:۰۰ صبح
+                                    </p>
+                                </div>
+                                <div class="cell small-1 icon-container">
+                                    <a>
+                                        <i class="fa fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- second trip -->
+                            <div class="grid-x text-center trips-container">
+                                <div class="cell small-2">
+                                    <p class="typography-h6-600 m-0">
+                                        مشهد
+                                    </p>
+                                </div>
+                                <div class="cell small-3">
+                                    <p class="typography-h6-600 m-0">
+                                        تهران
+                                    </p>
+                                </div>
+                                <div class="cell small-3">
+                                    <p class="typography-h6-600 m-0">
+                                        ۱۳۹۹/۰۱/۰۱
+                                    </p>
+                                </div>
+                                <div class="cell small-3">
+                                    <p class="typography-h6-600 m-0">
+                                        ۹:۰۰ شب
+                                    </p>
+                                </div>
+                                <div class="cell small-1 icon-container">
+                                    <a>
+                                        <i class="fa fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="dashboard-footer">
+                            <button class="text-primary-bold">
+                                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                خروج
+                            </button>
+
+                            <button class="text-primary">
+                                <i class="fa fa-cog" aria-hidden="true"></i>
+                                ویرایش پروفایل
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<!--included scripts-->
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/what-input/dist/what-input.js"></script>
+<script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+<script src="app.js"></script>
+<script src="forms.js"></script>
+<script src="scripts/overlayEffect.js"></script>
+
+</body>
+</html>

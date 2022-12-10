@@ -1,53 +1,43 @@
-<!doctype html>
-<html class="no-js" lang="fa" dir="rtl">
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Foundation for Sites</title>
-  <link rel="stylesheet" href="css/app.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
-  </style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="node_modules/alertifyjs/build/css/alertify.rtl.css">
+    <link rel="stylesheet" href="node_modules/alertifyjs/build/css/themes/default.rtl.css">
+    <title>بیلیکو، برای سفر خود برنامه‌ریزی کنید!</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
 </head>
 
-<body class="flex-body-column-direction">
-
-<!--Navbar goes here-->
 <div>
   <nav class="top-bar topbar-responsive">
-    <div class="top-bar-title">
-      <a class="topbar-responsive-logo" href="#">
-        <div style="display: flex; align-items: center">
-          <img
-                  src="assets/images/logo.png"
-                  style="margin-left: 1rem; width: 50px; height: 50px"
-                  alt="logo"/>
-        </div>
-        <h1 class="primary typography-h3-500"
-            style="display: flex; flex-direction: column; align-self: center; color: #1FABE0; margin: 0">
-          بیلیکو
-        </h1>
-      </a>
-    </div>
-    <div id="topbar-responsive" class="topbar-responsive-links">
-      <div>
-
+      <div class="top-bar-title">
+          <a class="topbar-responsive-logo" href="#">
+              <div style="display: flex; align-items: center">
+                  <img
+                          src="assets/images/logo.png"
+                          style="margin-left: 1rem; width: 50px; height: 50px"
+                          alt="logo"/>
+              </div>
+              <h1 class="primary typography-h3-500"
+                  style="display: flex; flex-direction: column; align-self: center; color: #1FABE0; margin: 0">
+                  بیلیکو
+              </h1>
+          </a>
       </div>
-    </div>
+      <div id="topbar-responsive" class="topbar-responsive-links">
+          <div>
+
+          </div>
+      </div>
   </nav>
 </div>
-<!---->
 
-<button type="submit" class="button"> <span class="bi-search"></span> Search</button>
 
 
 <!--included scripts-->
-<script src="node_modules/jquery/dist/jquery.js"></script>
-<script src="node_modules/what-input/dist/what-input.js"></script>
-<script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
-<script src="app.js"></script>
-
+<script src="node_modules/alertifyjs/build/alertify.min.js"></script>
+<script src="scripts/signUpValidation.js"></script>
 </body>
 </html>

@@ -43,6 +43,67 @@
 
 <!--</div>-->
 
+<div class="hero-section center-content">
+   <div class="iman-mio"
+   style="padding-top: 1rem; border: #00000029 solid 1px; border-radius: 2rem;  background-color: white; margin: 1rem;">
+    <div class="search-section">
+
+        <div>
+            <div class="search-header">
+                <i class="fa fa-calendar"></i>&nbsp;&nbsp;تاریخ رفت
+            </div>
+            <input class="input-field" type="date" id="arrive" placeholder="arrive" name="arrive"
+                   value="<?php echo date('Y-m-d'); ?>">
+        </div>
+        <div>
+            <div class="search-header"
+                 style="margin: auto; align-content: center; text-align: center;">
+                <i class="fa fa-calendar"></i>&nbsp;&nbsp;تاریخ برگشت
+            </div>
+            <input type="date" id="depart" placeholder="depart" class="input-field" name="depart"
+                   value="<?php echo date('Y-m-d'); ?>">
+        </div>
+        <div>
+            <div class="search-header">
+                <i class="fas fa-location"></i>&nbsp;&nbsp;نام فرودگاه مبدا
+            </div>
+            <form autocomplete="off">
+                <div class="autocomplete">
+                    <input id="myInput" type="text" class="input-field" name="myCountry"
+                           placeholder="Origin Airport">
+                </div>
+            </form>
+        </div>
+        <div>
+            <div class="search-header"
+                 style="margin: auto; align-content: center; text-align: center;">
+                <i class="fas fa-location"></i>&nbsp;&nbsp;نام فرودگاه مقصد
+            </div>
+            <form autocomplete="off">
+                <div class="autocomplete">
+                    <input id="myInput2" class="input-field" type="text" name="myCountry"
+                           placeholder="Destination Airport">
+                </div>
+            </form>
+        </div>
+        <div>
+            <div class="search-header">
+                تعداد مسافران
+                <input type="number" class="input-field" id="passenger" name="total_passenger" placeholder="2"
+                       min="1" required>
+            </div>
+        </div>
+        <div class="search-header"
+             style="text-align: center;">
+            <button class="button " role="button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                جستجو
+            </button>
+        </div>
+    </div>
+
+</div>
+
 <div class="grid-container" style="margin-bottom: 1.5rem; margin-top: 1.5rem;">
     <div class="grid-x grid-margin-x" style="padding-top: 1rem; border: #00000029 solid 1px; border-radius: 2rem;  background-color: white; margin: 1rem">
         <div class="cell large-2 small-5 center-content">

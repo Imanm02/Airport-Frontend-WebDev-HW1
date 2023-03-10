@@ -9,16 +9,34 @@ html {
 }
 
 .flex-body-row-direction {
-  @include flex-section(row, white);
+  @media (prefers-color-scheme: dark) {
+    @include flex-section(column, black);
+  }
+  
+  @media (prefers-color-scheme: light) {
+    @include flex-section(column, white);
+  }
   justify-content: center;
 }
 
 .flex-body-column-direction {
-  @include flex-section(column, white);
+  @media (prefers-color-scheme: dark) {
+    @include flex-section(column, white);
+  }
+  
+  @media (prefers-color-scheme: light) {
+    @include flex-section(column, black);
+  }
 }
 
 .center-content {
-  @include flex-section(column, white);
+  @media (prefers-color-scheme: dark) {
+    @include flex-section(column, black);
+  }
+  
+  @media (prefers-color-scheme: light) {
+    @include flex-section(column, white);
+  }
   align-self: center;
 }
 

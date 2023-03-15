@@ -20,6 +20,6 @@ yarn install
 * Open each of the html files in your web browser.
 
 # Maintainers
-- [Arash Yadegari](https://github.com/Arash1381-y)
 - [Iman Mohammadi](https://github.com/Imanm02)
+- [Arash Yadegari](https://github.com/Arash1381-y)
 - [Hasti Karimi](https://github.com/HastiKarimi)
